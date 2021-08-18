@@ -1,0 +1,220 @@
+body {
+    background-color: #282d46;
+}
+
+.indigo {
+    background-color: #3f51b5 !important;
+}
+
+.card, .table-color {
+    background-color: #22263c !important;
+}
+
+.card-body, .table-color {
+    color: white;
+}
+
+/* ------------ ajuste do avatar do user ------------ */
+
+/* Esconde o input */
+input[type='file'] {
+    display: none
+}
+  
+/* Aparência que terá o seletor de arquivo */
+label {
+    cursor: pointer;
+    height: 50px;
+}
+/* solução utilizada: https://pt.stackoverflow.com/questions/90179/como-estilizar-um-input-do-tipo-file */
+
+.dp-block {
+    display: block;
+}
+
+.dp-none {
+    display: none;
+}
+
+.image_circle {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-pic {
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+
+/* ------------ Config relacionado ao AVATAR ------------ */
+
+#avatar {
+    border-style: solid;
+    border-color: #3f51b5;
+    border-width: 3px;
+    padding: 3px;
+    margin-bottom: -20px;   /* faz o avatar sair da margem inferior */
+}
+
+#avatar-change {
+    width: 130px;
+    height: 50px;
+}
+
+#avatar-change > label > img {
+    border-style: solid;
+    border-color: #3f51b5;
+}
+
+.center_el {
+    display: block;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+.over-avatar {
+    left: 53%;
+}
+
+.over-btn > button {
+    background-color: #3f51b5;
+    text-decoration: none;
+    border: 2px solid #3f51b5;
+    color: white;
+    transition: 0.3s;
+}
+
+.over-btn > button:hover {
+    
+    background-color: #576ce4;
+    border: 2px solid #3f51b5;
+    
+}
+
+.center_el_within_block {
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+/* -------------------  Positions -------------------  */ 
+
+.pos-relative {
+    /* Esta posição faz com o elemento fique posicionado em relação a sua própria posição. */
+    /* Pode ser usado para deslocar o elemento em relação a ele mesmo e também posicionar a fim de afetar elementos descendentes. */
+    position: relative;
+}
+
+.pos-absolute {
+    /* Faz com o elemento fique posicionado fixamente em relação ao ancestral posicionado mais próximo. */
+    position: absolute; 
+    bottom: -30px; 
+}
+
+/* -------------------  Display/FlexBox -------------------  */
+
+.dpFlexCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bio_text {
+    text-align: center; 
+    margin-top: 30px;
+    color: white;
+}
+
+/* Aumenta a largura  dos botoes */
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 6rem;
+}
+
+/* botao sair para a direita*/
+
+.bt-right {
+    display: block;
+    margin-left: auto!important;
+    
+}
+
+/* Tabelas */
+
+.table td, .table th {
+    border-top: 1px solid #425263;
+    border-bottom: 1px solid #425263;
+    padding: 1rem;
+}
+
+/* Formulario */
+
+.container {
+    max-width: 940px;
+}
+
+.img-center {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1007px){
+    .btn-group-lg>.btn, .btn-lg {
+        padding: .5rem 5.5rem;
+    }
+}
+
+@media (max-width: 882px){
+    .over-avatar {
+        left: 55%;
+    }
+}
+
+@media (max-width: 768px){
+    .btn-group-lg>.btn, .btn-lg {
+        padding: .5rem 3rem;
+    }
+}
+
+@media (max-width: 600px){
+    .over-avatar {
+        left: 58%;
+    }
+}
+
+@media (max-width: 529px){
+    
+    .btn-group-lg>.btn, .btn-lg {
+        padding: .5rem 0.9rem;
+    }
+}
+
+@media (max-width: 425px){
+    
+    .btn-group-lg>.btn, .btn-lg {
+        padding: .4rem 0.7rem;
+        font-size: 1rem;
+    }
+
+    .over-avatar {
+        left: 61%;
+    }
+
+}
+
+@media (max-width: 375px){
+    
+}
+
+@media (max-width: 320px){
+    .over-avatar {
+        left: 64%;
+    }
+}
+
+@media (max-width: 275px){
+    
+}
